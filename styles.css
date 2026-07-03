@@ -287,8 +287,153 @@ color:#E7D4C5;
     font-size: clamp(0.85rem, 1.2vw, 1rem);
     font-weight: 400;
     color: rgba(255, 255, 255, 0.75);
+}
+
+/* second section */
+
+.second-section-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+     display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 8rem 2rem;
+     
+}
+
+.second-section-header {
+
+display: flex;
+gap: clamp(1rem, 2vw, 2rem);
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.second-section-left h6 {
+    font-family:"Inter";
+font-size:
+clamp(0.8em,1vw,1.1rem);
+letter-spacing:.2em;
+font-weight: 800;
+text-transform:uppercase;
+color:#e08f52;
+}
+
+.second-section-right p {
+    font-family: "Inter", sans-serif;
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+    color: var(--text-light);
+    max-width: 445px;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.second-section-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+   width: 100%;
+  
+  
+}
+
+.second-cards {
+    border-radius: 1rem;
+    background-color: var(--background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+     cursor: pointer;
+  
+}
+
+.second-cards:hover {
+
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.second-image-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--surface);
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+      transition: transform 0.3s ease;
+}
+
+.second-cards img {
+    width: 100%;
+    height: 290px;
+    display: block;
+  transition: transform 0.4s ease;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.second-image-container {
+    overflow: hidden;
+}
+
+
+.second-card-content {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--surface);
+     transition: transform 0.3s ease;
+}
+
+.second-cards:hover .second-image-container img {
+  transform: scale(1.1); /* ← image zooms in */
+}
+
+
+.second-cards:hover .second-card-content .image-overlay {
+  transform: translateY(-4px); /* ← text lifts up slightly */
+}
+
+.left-card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 700;
+    color: var(--text);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+
+
+.left-card-content p {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+    color: var(--text-light);
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+    
+}
+
+.right-card-content p {
+    font-family: 'Jost', sans-serif;
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+    color: rgb(202, 202, 12);
    
 }
+
+
+
+
+
 @media (max-width: 900px) {
     .hamburger {
         display: flex;
@@ -322,4 +467,20 @@ color:#E7D4C5;
     }
 }
 
+@media (max-width:768px) {
 
+}
+
+@media (max-width:576px){
+    
+}
+
+@media (max-width: 375px) {
+
+.second-section-cards {
+    grid-template-columns: 1fr; /* stack cards vertically */
+    gap: 1.5rem; /* reduce gap for smaller screens */
+
+}
+
+}
