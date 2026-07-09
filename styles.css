@@ -299,6 +299,7 @@ color:#E7D4C5;
     flex-direction: column;
     gap: 4rem;
     padding: 8rem 2rem;
+
      
 }
 
@@ -311,10 +312,10 @@ align-items: center;
 flex-wrap: wrap;
 }
 
+
 .second-section-left h6 {
     font-family:"Inter";
-font-size:
-clamp(0.8em,1vw,1.1rem);
+font-size: clamp(0.8em,1vw,1.1rem);
 letter-spacing:.2em;
 font-weight: 800;
 text-transform:uppercase;
@@ -325,9 +326,9 @@ color:#e08f52;
     font-family: "Inter", sans-serif;
     font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
     color: var(--text-light);
-    max-width: 445px;
-    width: 100%;
     line-height: 1.6;
+    max-width: 450px;
+    width: 100%;
 }
 
 .second-section-cards {
@@ -335,7 +336,6 @@ color:#e08f52;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
    width: 100%;
-  
   
 }
 
@@ -431,8 +431,152 @@ color:#e08f52;
 }
 
 
+.third-section-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: rgb(240, 233, 218);
+    padding: 0 0 2rem 0;
+}
+
+.third-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+     padding: 8rem 2rem;
+}
+
+.left-section-third-header {
+    max-width: 400px;
+    width: 100%;
+}
+
+.right-section-third-header {
+    max-width: 400px;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+}
+
+.left-section-third-header h6 {
+    font-family:"Inter";
+    color:#e08f52;
+    font-size:clamp(0.8em,1vw,1.1rem);
+    letter-spacing: .2em;
+    font-weight: 800; 
+}
+
+.left-section-third-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    font-weight: 700;
+    color: var(--text);
+}
 
 
+.third-cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+      padding: 0rem 1rem;
+}
+
+.third-cards {
+    background-color: var(--background);
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem 1rem 0 1rem;
+    gap: 1rem;
+     border: 1px solid transparent; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.third-cards:hover {
+    border-color: #2E6B5B; /* ← green border appears */
+  box-shadow: 0 8px 24px rgba(46, 107, 91, 0.15); /* ← subtle green shadow */
+  transform: translateY(-4px); /* ← lifts up slightly */
+}
+
+
+
+.third-cards h3 {
+   font-family: 'Playfair Display', serif;
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+     color: var(--text);
+}
+
+.third-icon-container {
+    background-color: #eaf4f1;
+  border-radius: 1rem;
+  padding: 0.9rem;
+  display: inline-flex;
+  justify-content: start;
+  width: fit-content; 
+  height: fit-content; 
+ 
+}
+
+.third-card-sub-text {
+   color: #64748B;
+   font-family: 'Inter', sans-serif;
+   font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+   line-height: 1.6;
+}
+
+.last-third-cards {
+
+     background-color: #2E6B5B;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.last-third-cards:hover {
+  
+  box-shadow: 0 8px 24px rgba(46, 107, 91, 0.15); /* ← subtle green shadow */
+  transform: translateY(-4px); /* ← lifts up slightly */
+}
+
+.third-last-card-heading {
+    font-family: 'Playfair Display', serif;
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  
+}
+
+.third-last-card-sub-text {
+     font-family: 'Inter', sans-serif;
+  font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.2;
+}
+
+.third-last-card-button button {
+     display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
 
 @media (max-width: 900px) {
     .hamburger {
@@ -482,5 +626,14 @@ color:#e08f52;
     gap: 1.5rem; /* reduce gap for smaller screens */
 
 }
+
+.third-cards-section {
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+ 
+}
+
+
 
 }
