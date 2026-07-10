@@ -419,7 +419,7 @@ color:#e08f52;
     font-family: 'Jost', sans-serif;
     font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
     color: var(--text-light);
-    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+   
     
 }
 
@@ -429,7 +429,6 @@ color:#e08f52;
     color: rgb(202, 202, 12);
    
 }
-
 
 .third-section-container {
     max-width: 1500px;
@@ -578,6 +577,115 @@ color:#e08f52;
   padding: 0;
 }
 
+/*Fourth Section*/
+
+.fourth-section-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--background);
+   padding: 5rem 3rem 5rem 4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   flex-wrap: wrap;
+   
+   
+}
+
+.fourth-left-content {
+    width: 40%;
+    min-height: 400px;
+    
+}
+
+.fourth-left-content img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;   
+  border-radius: 1rem; 
+}
+
+.fourth-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+.fourth-header h5 {
+    font-family: 'Inter', sans-serif;
+font-size: clamp(0.7rem, 1vw, 0.85rem);
+font-weight: 800;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #C1603C;
+}
+
+.fourth-main-header h2{
+    font-family: 'Playfair Display', serif;
+font-size: clamp(1.2rem, 3.5vw, 2rem);
+font-weight: 700;
+color: #1a1a1a;
+line-height: 1.2;
+}
+
+.fourth-sub-text p {
+ font-family: 'Inter', sans-serif;
+font-size: clamp(0.5rem, 0.75rem + 0.3vw, 0.875rem);
+color: #64748B;
+line-height: 1.7;
+}
+
+.fourth-right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fourth-contents {
+    display: flex;
+    gap: 1rem;
+}
+
+.fourth-text-content h4 {
+    
+font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+font-weight: 700;
+color: #1a1a1a;
+}
+
+.fourth-text-content p {
+font-family: 'Inter', sans-serif;
+font-size: clamp(0.5rem, 0.75rem + 0.3vw, 0.875rem);
+color: #64748B;
+line-height: 1.6;
+}
+
+
+.fourth-icon-container {
+  background-color: #F0DDD4;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+
+.fourth-icon-container svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+
 @media (max-width: 900px) {
     .hamburger {
         display: flex;
@@ -613,6 +721,10 @@ color:#e08f52;
 
 @media (max-width:768px) {
 
+.fourth-left-content {
+    width: 100%; 
+    min-height: 300px;
+  }
 }
 
 @media (max-width:576px){
