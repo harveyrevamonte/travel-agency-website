@@ -187,6 +187,7 @@
 
 
 .first-section-content h6 {
+
     font-family:"Inter";
 font-size:
 clamp(0.8em,1vw,1.1rem);
@@ -820,7 +821,8 @@ line-height: 1.2;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sixth-left-container {
@@ -1018,7 +1020,112 @@ line-height: 1.7;
 
 /*Seven Section*/
 
+.seven-section-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(240, 233, 218);
+      padding: 5rem clamp(1rem, 4vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+}
 
+.seven-section-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 0.6rem;
+max-width: 1500px;
+width: 100%;
+}
+
+.seven-left-header {
+    max-width: 280px;
+    width: 100%;
+}
+
+.seven-left-header h5 {
+     font-family: 'Inter', sans-serif;
+font-size: clamp(0.7rem, 1vw, 0.85rem);
+font-weight: 800;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #C1603C;
+}
+
+.seven-left-header h2 {
+ font-family: 'Playfair Display', serif;
+font-size: clamp(1.2rem, 3.5vw, 2rem);
+font-weight: 700;
+color: #1a1a1a;
+line-height: 1.7;
+}
+
+.seven-right-header {
+    max-width: 400px;
+    width: 100%;
+}
+
+.seven-right-header p {
+     font-family: "Inter", sans-serif;
+    font-size: clamp(0.875rem, 0.75rem + 0.4vw, 0.7rem);
+    color: var(--text-light);
+    line-height: 1.6;
+   
+}
+
+.seven-grid-container {
+     display: grid;
+    width: 100%;
+    max-width: 1500px;
+    grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+    gap: 2rem;
+}
+
+.seven-grid-cards {
+    background-color: var(--background);
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem 1rem 0 1rem;
+    gap: 1rem;
+     border: 1px solid transparent; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.seven-grid-cards:hover {
+    border-color: #2E6B5B; /* ← green border appears */
+  box-shadow: 0 8px 24px rgba(46, 107, 91, 0.15); /* ← subtle green shadow */
+  transform: translateY(-4px); /* ← lifts up slightly */
+}
+
+.seven-icon-container {
+ background-color: #eaf4f1;
+  border-radius: 1rem;
+  padding: 0.9rem;
+  display: inline-flex;
+  justify-content: start;
+  width: fit-content; 
+  height: fit-content; 
+}
+
+.seven-card-heading h3 {
+  font-family: 'Playfair Display', serif;
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+     color: var(--text);
+}
+
+.seven-card-sub-text {
+ color: #64748B;
+   font-family: 'Inter', sans-serif;
+   font-size: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+   line-height: 1.6;
+}
 
 @media (max-width: 900px) {
     .hamburger {
