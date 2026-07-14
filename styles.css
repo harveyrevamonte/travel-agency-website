@@ -818,9 +818,9 @@ line-height: 1.2;
 
 .sixth-header-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
+    
 }
 
 .sixth-left-container {
@@ -924,6 +924,101 @@ width: 100%;
     color: #6B665F;
     line-height: 1.5;
 }
+
+.cards-and-offer-gaps {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(4rem, 8vw, 10rem);
+}
+
+.sixth-section-offer-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 15px;
+   background-image:
+    linear-gradient(
+        to right,
+        rgba(20, 45, 38, 0.82) 0%,
+        rgba(20, 45, 38, 0.55) 40%,
+        rgba(20, 45, 38, 0.20) 100%
+    ),
+    url("assets/offer.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* keeps the image inside the rounded corners */
+}
+
+.sixth-offer-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    max-width: 370px;
+    width: 100%;
+    
+}
+
+.offer-mini-header {
+    font-family: 'Inter', sans-serif;
+font-size: clamp(0.7rem, 1vw, 0.85rem);
+font-weight: 800;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #E8D5B5;
+
+}
+
+.main-offer-main-content {
+    font-family: 'Playfair Display', serif;
+font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+font-weight: 700;
+color: #ffffff;
+line-height: 1.2;
+}
+
+.sub-text-offer {
+font-family: 'Inter', sans-serif;
+font-size: clamp(0.5rem, 0.75rem + 0.3vw, 0.779rem);
+line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+
+}
+
+.sixth-offer-button {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+   
+}
+
+.btn-first-offer {
+    background-color: var(--success);
+    color: var(--surface);
+    border-radius: 2rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+   font-size: clamp(0.6875rem, 0.65rem + 0.2vw, 0.8125rem);
+}
+
+.btn-second-offer {
+     background-color: transparent;
+    color: var(--surface);
+    border-radius: 2rem;
+    padding: 0.8rem 0;
+    border: none;
+    font-weight: 500;
+    font-size: clamp(0.6875rem, 0.65rem + 0.2vw, 0.8125rem);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/*Seven Section*/
+
+
 
 @media (max-width: 900px) {
     .hamburger {
