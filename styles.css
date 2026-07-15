@@ -808,11 +808,10 @@ line-height: 1.2;
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
-     padding: 5rem 2rem 5rem 2rem;
+     padding: clamp(5rem, 5vw, 5rem) clamp(0.7rem, 2vw, 1.5rem);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
     gap: 3rem;
      background-color: #F4EFE6;
 }
@@ -823,6 +822,7 @@ line-height: 1.2;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .sixth-left-container {
@@ -864,9 +864,10 @@ width: 100%;
 
 .sixth-cards-container {
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.7rem;
-
+  
+ 
 }
 
 .sixth-card {
@@ -1061,8 +1062,8 @@ color: #C1603C;
  font-family: 'Playfair Display', serif;
 font-size: clamp(1.2rem, 3.5vw, 2rem);
 font-weight: 700;
-color: #1a1a1a;
-line-height: 1.7;
+color: #1a1a1a; 
+line-height: 1.2;
 }
 
 .seven-right-header {
