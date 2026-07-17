@@ -1312,6 +1312,13 @@ font-family: "Inter", sans-serif;
     grid-template-rows: 150px 150px 150px; /* ← 3 rows now */
   }
 
+  .eight-section-grid {
+    grid-template-columns: 2fr; /* stack cards vertically */
+    gap: 1.5rem; /* reduce gap for smaller screens */
+
+}
+
+
 }
 
 @media (max-width: 375px) {
