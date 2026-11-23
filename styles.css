@@ -155,8 +155,8 @@ html {
 }
 
 .first-section-container {
-  max-width: 1500px;
   width: 100%;
+
   min-height: 600px; /* was: height: 600px */
   margin: 0 auto;
   background-image:
@@ -293,7 +293,6 @@ html {
 /* second section */
 
 .second-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -417,7 +416,6 @@ html {
 }
 
 .third-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -565,7 +563,6 @@ html {
 /*Fourth Section*/
 
 .fourth-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   background-color: var(--background);
@@ -666,7 +663,6 @@ html {
 /*Fift Section*/
 
 .fifth-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding: 3rem 1.5rem 3rem 1.5rem;
@@ -776,7 +772,6 @@ html {
 
 /* Sixth Section*/
 .sixth-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding: clamp(5rem, 5vw, 5rem) clamp(0.7rem, 2vw, 1.5rem);
@@ -900,7 +895,6 @@ html {
 }
 
 .sixth-section-offer-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
@@ -985,7 +979,6 @@ html {
 /*Seven Section*/
 
 .seven-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   background: rgb(240, 233, 218);
@@ -1003,7 +996,6 @@ html {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.6rem;
-  max-width: 1500px;
   width: 100%;
 }
 
@@ -1044,7 +1036,6 @@ html {
 .seven-grid-container {
   display: grid;
   width: 100%;
-  max-width: 1500px;
   grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
   gap: 2rem;
 }
@@ -1095,7 +1086,6 @@ html {
 
 /* Eight Section */
 .eight-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding: 3.5rem 3rem;
@@ -1226,7 +1216,6 @@ html {
 /*Nine section*/
 
 .nine-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   background: rgb(240, 233, 218);
@@ -1355,7 +1344,6 @@ html {
 /*Ten Section*/
 
 .ten-section-container {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1555,7 +1543,6 @@ html {
 
 .footer-container {
   background-color: #1B3A2F;
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding: clamp(3rem, 5vw, 5rem) clamp(2rem, 5vw, 6rem);
